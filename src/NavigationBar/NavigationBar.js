@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 // import bgImg from "../../assets/navBarBrPic.png";
 // import "popper.js/dist/popper";
 import "bootstrap/dist/css/bootstrap.css";
 import {NavLink} from "react-router-dom";
-import {Nav, Navbar} from "react-bootstrap";
+// import {Nav, Navbar, Collapse} from "react-bootstrap";
+import {Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, Button} from 'reactstrap';
 import {withRouter} from "react-router-dom";
 import "./navBarStyle.css";
 
@@ -28,20 +29,30 @@ import "./navBarStyle.css";
 //     }
 // }
 const MyNavbar = props => {
+   
     const { location } = props;
+    const [isOpen, setIsOpen] =useState(false);
+    const toggle = () => setIsOpen(!isOpen);
+    const closeNavBar =(e)=>{
+        if(isOpen && ! e.target.classList.contains('navbar-toggler')){
+          setIsOpen(false);
+        console.log('testCloseNavBar')
+        }
+        
+      }
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="/"><strong className="titreBrand">Développeur web junior</strong></Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto" activeKey={location.pathname}>
-                    <NavLink className="nav-link" exact to="/apropos">À propos</NavLink>
-                    <NavLink className="nav-link" exact to="/parcours">Parcours</NavLink>
-                    <NavLink className="nav-link" exact to="/competences">Compétences</NavLink>
-                    <NavLink className="nav-link" exact to="/realisations">Réalisations</NavLink>
-                    <NavLink className="nav-link" exact to="/contact">Contact</NavLink>
+        <Navbar expand="lg" dark color="dark">
+            <NavbarBrand href="/"><strong className="titreBrand">Développeur web junior</strong></NavbarBrand>
+            <NavbarToggler aria-controls="responsive-navbar-nav" onClick={toggle} />
+            <Collapse isOpen={isOpen} navbar>
+                <Nav className="mr-auto" navbar activeKey={location.pathname}>
+                    <NavLink className="nav-link" exact to="/apropos" onClick={closeNavBar}>À propos</NavLink>
+                    <NavLink className="nav-link" exact to="/parcours" onClick={closeNavBar}>Parcours</NavLink>
+                    <NavLink className="nav-link" exact to="/competences" onClick={closeNavBar}>Compétences</NavLink>
+                    <NavLink className="nav-link" exact to="/realisations" onClick={closeNavBar}>Réalisations</NavLink>
+                    <NavLink className="nav-link" exact to="/contact" onClick={closeNavBar}>Contact</NavLink>
                 </Nav>
-            </Navbar.Collapse>
+            </Collapse>
         </Navbar>
     );
 };
