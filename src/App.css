@@ -1,0 +1,92 @@
+.App {
+
+  text-align: center;
+}
+.row{
+  margin: auto;
+}
+.mySwitch{
+  /*display: block;*/
+  position: relative;
+  min-height: calc(100vh - 339px);
+  /*min-width: auto;*/
+  padding-left: 30px;
+}
+.mySwitch::after{
+  content: "";
+  opacity: 0.8;
+  background-image: url("./assets/jumboImg3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -100;
+  height: 100%;
+}
+/*.container{*/
+/*  margin-left: 0;*/
+/*  margin-right: 0;*/
+/*}*/
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+/*.presentationStyle{*/
+/*  padding: 30px 0 30px 20px;*/
+/*  color: #b09f63;*/
+/*  font-weight: bold;*/
+/*  font-family: Arial, sans-serif;*/
+/*}*/
+.jumbotron{
+  background-image: url("./assets/jumboImg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h2{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media  (max-width: 768px){
+  .divCalendrier{
+    display: none;
+  }
+  .col-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

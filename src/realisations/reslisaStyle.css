@@ -1,0 +1,52 @@
+.pRealisations{
+    color: #ffffff;
+    font-family: Cambria, sans-serif;
+    /*font-weight: bold;*/
+    font-size: 1.1rem;
+    line-height: 2rem;
+    padding: 10px;
+}
+.memory{
+    margin-bottom: 1rem;
+    padding: 10px;
+}
+h6{
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+}
+.card{
+    background-color: #4f5e6b;
+    padding: 10px;
+}
+.seresa{
+    background-color: #0c5460;
+    margin-bottom: 1rem;
+    padding: 10px;
+}
+.card1{
+    display: inline-block;
+    background-color: #4f5e6b;
+    margin: 10px;
+}
+#imgMemo{
+    height: 200px;
+    width: 400px;
+    margin: auto;
+}
+#pMemory{
+color: #ffffff;
+    text-align: center;
+    font-family:Cambria, sans-serif;
+    display: inline-block;
+}
+@media  (max-width: 768px){
+    .pRealisations{
+        padding: 1.3rem;
+    }
+}
+@media  (max-width: 576px){
+    .pRealisations{
+        padding: 0.5rem;
+    }
+}

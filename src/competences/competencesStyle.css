@@ -1,0 +1,153 @@
+#skills{
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    /*margin-bottom: 30px;*/
+    font-family: Calibri, sans-serif;
+    height: auto;
+}
+/*#skills::after{*/
+/*    content: "";*/
+/*    opacity: 0.4;*/
+/*}*/
+.dev-icons .list-inline-item{
+    /*padding: 0 15px 0 15px;*/
+    justify-content: space-between;
+    align-items: center;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+    margin: 8px;
+}
+.progressDiv{
+    height:30px;
+    border-radius: 5px;
+    width:98%;
+    background-Color: #e2d9d9;
+    justify-content: center;
+    align-items: center;
+}
+.progress{
+    text-align: center;
+    justify-content: center;
+    height:30px;
+    transition: 2s ease;
+    transition-delay: 0.5s;
+}
+h6{
+    font-weight: bold;
+}
+.iconHtml5{
+    font-size: 4rem;
+    color: #d9941e;
+    animation: rotation linear infinite 8s;
+}
+.iconCss3{
+    color: #005cbf;
+    font-size: 4rem;
+    animation: rotation linear infinite 8s;
+}
+.iconBoot{
+    color: #8521dd;
+    font-size: 4rem;
+    animation: rotation linear infinite 8s;
+}
+.iconJs{
+    color: #F0DB4F;
+    font-size: 4rem;
+    border-radius: 40%;
+    animation: rotation linear infinite 8s;
+}
+.iconReact{
+    color: #61DBFB;
+    font-size: 4rem;
+    animation: rotation2 linear infinite 8s;
+}
+.iconNode{
+    color: #68A063;
+    font-size: 4rem;
+    animation: rotation linear infinite 8s;
+}
+.iconPhp{
+    color: #71309f;
+    font-size: 5.5rem;
+    animation: rotation linear infinite 8s;
+    font-weight: bold;
+}
+.iconSymfony{
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 50%;
+    font-size: 4rem;
+    animation: rotation linear infinite 8s;
+}
+.iconLaravel{
+    color: #ea7a25;
+    font-size: 4rem;
+    animation: rotation2 linear infinite 8s;
+}
+.iconWordpress{
+    color: #00749C;
+    background-color: #ffffff;
+    border-radius: 50%;
+    font-size: 4rem;
+    animation: rotation linear infinite 8s;
+}
+.listCopetences li{
+    color: #edf4f5;
+    padding-bottom: 5px;
+}
+.allProgressBar{
+    margin-bottom: 20px;
+}
+.pCompetences{
+    color: #ffffff;
+    font-family: Cambria, sans-serif;
+    font-weight: revert;
+    font-size: large;
+}
+
+/*@media (prefers-reduced-motion: no-preference) {*/
+/*    .iconHtml5{*/
+/*        animation: infinite 20s linea;*/
+/*    }*/
+/*}*/
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotation2 {
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+@media (max-width: 768px) {
+    .iconHtml5, .iconCss3, .iconBoot, .iconJs, .iconNode, .iconPhp, .iconReact{
+        font-size: 3.5rem;
+    }
+    /*.dev-icons .list-inline-item{*/
+    /*    padding: 14px;*/
+    /*}*/
+    .iconPhp{
+        font-size: 5rem;
+    }
+}
+@media (max-width: 576px) {
+    .iconHtml5, .iconCss3, .iconBoot, .iconJs, .iconNode, .iconPhp, .iconReact{
+        font-size: 3rem;
+    }
+    .dev-icons .list-inline-item{
+        padding: 10px;
+    }
+    .iconPhp{
+        font-size: 4rem;
+    }
+}

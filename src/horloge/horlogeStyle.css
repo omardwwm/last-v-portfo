@@ -1,0 +1,18 @@
+.react-clock{
+    color: #46e32a;
+    background-color: #1d2124;
+    border-radius: 50%;
+    opacity: 0.75;
+}
+
+.react-clock__hand__body{
+    background-color: #ffffff;
+}
+
+.react-clock__second-hand__body{
+    background-color: #f13806;
+}
+
+.react-clock__mark__body{
+    background-color: #dbf01e;
+}
