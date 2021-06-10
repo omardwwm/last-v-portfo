@@ -1,10 +1,12 @@
 import React from "react";
-import "./reslisaStyle.css";
 import memoryPic from "../assets/memoryPic.png";
 import fruits from "../assets/fruitslegumes.png";
+import wecook from "../assets/wecook.png";
 import * as FaIcons from "react-icons/fa";
 import {Link} from "react-router-dom";
 import ReactPlayer from 'react-player';
+import {Col, Image} from "react-bootstrap";
+import "./reslisaStyle.css";
 
 
 
@@ -12,47 +14,67 @@ const Realisations = () => {
     return (
         <div className="realisations">
             <h2 className="mb-5"><strong>Réalisations</strong></h2>
-           <p className="pRealisations">Ce futur portfolio est ma première réalisation totalement personnelle et sans aucun template, (développé sous REACT-JS/HTML5/CSS3/BOOTSTRAP et bientôt de PHP pour la partie back-end pour d'autres fonctionnalités, quand au formulaire il est fonctionnelle grâce à une API développée en NODEJS qui utilise le service d'une autre API de mailing (SENDGRID), la partie front est déployée sur NETLIFY et le back(API) sur HEROKU).<br/> Pendant la formation j'ai participé à la réalisations
-               de certaines applications de gestion de tâches et de contacts, jeux et animations en Javascript, mini applications mobiles vitrines en Reacte-native mais c'etait en travail de groupe et TP donc pas des réalisations à 100% personnelles.<br/>
-               cette partie sera allimenteé pendant et après la formation(prévue jusqu'à mars 2021.</p>
-            <div className="row">
-                <div className=" memory m-2">
-                    <div className="card shadow-sm">
-                        <h6>Memory-sim</h6>
-                        <img id="imgMemo" src={memoryPic} alt="capture"/>
-                        <p id="pMemory">Memory game en javascript <Link to={{pathname: "https://memory-sim.boudromar.com/"}} target="_blank"><FaIcons.FaExternalLinkAlt style={{color:"#daef0a"}}/></Link></p>
-                    </div>
-                </div>
-                <div className=" memory m-2">
-                    <div className="card shadow-sm">
-                        <h6>Calendrier FRUITS & LÉGUMES</h6>
-                        <img id="imgMemo" src={fruits} alt="calendrierfruits"/>
-                        <p id="pMemory">Appli sous Symfony <Link to={{pathname: "https://fruits-calendar.herokuapp.com/"}} target="_blank"><FaIcons.FaExternalLinkAlt style={{color:"#daef0a"}}/></Link>
-                        </p>
-                    </div>
+            <p className="pRealisations">
+                Ce portfolio est ma première réalisation totalement personnelle et sans template, (développée avec REACT-JS/HTML5/CSS3/BOOTSTRAP, le formulaire est fonctionnelle grâce à une API développée en NODEJS qui utilise le service d'une autre API de mailing (SENDGRID), la partie front est déployée sur NETLIFY et le back(API) sur HEROKU).Les fichiers (images et vidéos) de certains projets (ceux qui ont une base de données) sont stockés sur le service AWS S3.<br/>
+                Cette partie sera alimentée et à jour régulièrement.<br/>
+                Ci-dessous quelque unes de mes réalisations avec des liens pour celles deployées et des illustrations (vidéos) pour celles que j'ai pas pu déployer parce que realisées pour un client de l'entreprise pendant mon stage.
+            </p>
+            <div className="col">
+                <div className="row">
+                    {/* <div className="col"> */}
+                        <div className="d-inline-block col-md-6 p-0">
+                            <div className="card shadow-sm">
+                                <h6>Memory-sim</h6>
+                                <Image src={memoryPic} style={{height:'260px'}} alt="capture" fluid /> 
+                                <p className="pMemory">Memory game en javascript <Link to={{pathname: "https://memory-sim.boudromar.com/"}} target="_blank">&nbsp;&nbsp;&nbsp;<p className="pMemory">Visiter</p><FaIcons.FaExternalLinkAlt style={{color:"#daef0a"}}/></Link></p>
+                            </div>
+                        </div>
+                        <div className="d-inline-block col-md-6 p-0"> 
+                            <div className="card shadow-sm">
+                                <h6>Calendrier FRUITS/LÉGUMES</h6>
+                                <Image src={fruits} style={{height:'260px'}} alt="calendrierfruits" fluid />
+                                <p className="pMemory">Appli sous Symfony <Link to={{pathname: "https://fruits-calendar.herokuapp.com/"}} target="_blank">&nbsp;&nbsp;&nbsp;<p className="pMemory">Visiter</p><FaIcons.FaExternalLinkAlt style={{color:"#daef0a"}}/></Link>
+                            </p>
+                            </div>
+                        </div>
+                    {/* </div>    */}
                 </div>
             </div>
-            <div className="row">
-                <div className="seresa m-2">
-                    <h6>Application mobile React Native/Redux/API REST WordPress</h6>
-                    <div>
-                        <p id="pMemory">Application réalisée lors de mon stage de formation pour un client de l'entreprise</p>
+
+            <div className="d-inline-block col mt-3">
+                        <div className="card shadow-sm">
+                            <h6>wecook, creation et partage des recettes de cuisine</h6>
+                            <Image src={wecook} alt="capture ecrans site" fluid />
+                            <p className="pMemory">Appli MERN (ReactJs/Redux, Express, NodeJS, MongoDB ) <Link to={{pathname: "https://wecook.netlify.app/recipes/"}} target="_blank">&nbsp;&nbsp;&nbsp;<p className="pMemory">Visiter</p><FaIcons.FaExternalLinkAlt style={{color:"#daef0a"}}/></Link>
+                            </p>
+                            <p className="pMemory">Déployée avec Heroku pour le backend (l'API), Netlify pour le frontend, MongoDb Atlas pour la base de données, et AWS S3 pour le stockage physique des images.</p>
+                        </div>
                     </div>
-                    <div className="card1 shadow-sm">
-                        <p className="text-white text-center">Démonstration de la partie patient</p>
-                        <ReactPlayer style={{margin:'auto', padding:5}} controls={true}
-                                     url='https://portfo-video.boudromar.com/screen-recor-seresa2-expo-go_yGHabUbh.mp4'
-                                     width='300px'
-                                     height='150px'
-                        />
+            
+            <div className="seresa mt-2">
+                <h6>Application mobile React Native/Redux/API REST WordPress</h6>
+                <p className="pMemory ">Application réalisée lors de mon stage de formation pour un client l'entreprise</p>
+                <div className="row">
+                    <div className="col-6 ">
+                        <div className="card1  ">
+                            <p className="text-white text-center">Démonstration de la partie patient</p>
+                            <ReactPlayer style={{margin:'auto', padding:5}} controls={true}
+                                        url='https://portfo-video.boudromar.com/screen-recor-seresa2-expo-go_yGHabUbh.mp4'
+                                        width='100%'
+                                        height='300px' 
+                                        fluid={true}
+                            />
+                        </div>
                     </div>
-                    <div className="card1 shadow-sm">
-                        <p className="text-white text-center">Démonstration de la partie kiné</p>
-                        <ReactPlayer style={{margin:'auto', padding:5}} controls={true}
-                                     url='https://portfo-video.boudromar.com/screen-record1-seresa1-035329-expo-go_ayIiXLfJ.mp4'
-                                     width='300px'
-                                     height='150px'
-                        />
+                    <div className="col-6 ">
+                        <div className="card1 ">
+                            <p className="text-white text-center">Démonstration de la partie kiné</p>
+                            <ReactPlayer style={{margin:'auto', padding:5}} controls={true}
+                                        url='https://portfo-video.boudromar.com/screen-record1-seresa1-035329-expo-go_ayIiXLfJ.mp4'
+                                        width='100%'
+                                        height='300px'
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
