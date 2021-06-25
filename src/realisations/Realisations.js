@@ -45,7 +45,7 @@ const Realisations = () => {
                         <div className="card shadow-sm">
                             <h6>wecook, creation et partage des recettes de cuisine</h6>
                             <Image src={wecook} alt="capture ecrans site" fluid />
-                            <p className="pMemory">Appli MERN (ReactJs/Redux, Express, NodeJS, MongoDB ) <Link to={{pathname: "https://wecook.netlify.app/recipes/"}} target="_blank">&nbsp;&nbsp;&nbsp;<p className="pMemory">Visiter</p><FaIcons.FaExternalLinkAlt style={{color:"#daef0a"}}/></Link>
+                            <p className="pMemory">Appli MERN (ReactJs/Redux, Express, NodeJS, MongoDB ) <Link to={{pathname: "https://wecook.netlify.app/"}} target="_blank">&nbsp;&nbsp;&nbsp;<p className="pMemory">Visiter</p><FaIcons.FaExternalLinkAlt style={{color:"#daef0a"}}/></Link>
                             </p>
                             <p className="pMemory">Déployée avec Heroku pour le backend (l'API), Netlify pour le frontend, MongoDb Atlas pour la base de données, et AWS S3 pour le stockage physique des images.</p>
                         </div>
