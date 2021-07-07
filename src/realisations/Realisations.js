@@ -5,7 +5,7 @@ import wecook from "../assets/wecook.png";
 import * as FaIcons from "react-icons/fa";
 import {Link} from "react-router-dom";
 import ReactPlayer from 'react-player';
-import {Col, Image} from "react-bootstrap";
+import {Image} from "react-bootstrap";
 import "./reslisaStyle.css";
 
 
@@ -26,7 +26,7 @@ const Realisations = () => {
                             <div className="card shadow-sm">
                                 <h6>Memory-sim</h6>
                                 <Image src={memoryPic} style={{height:'260px'}} alt="capture" fluid /> 
-                                <p className="pMemory">Memory game en javascript <Link to={{pathname: "https://memory-sim.boudromar.com/"}} target="_blank">&nbsp;&nbsp;&nbsp;<p className="pMemory">Visiter</p><FaIcons.FaExternalLinkAlt style={{color:"#daef0a"}}/></Link></p>
+                                <p className="pMemory">Memory game en javascript <Link to={{pathname: "https://memory-sim-omar.netlify.app/"}} target="_blank">&nbsp;&nbsp;&nbsp;<p className="pMemory">Visiter</p><FaIcons.FaExternalLinkAlt style={{color:"#daef0a"}}/></Link></p>
                             </div>
                         </div>
                         <div className="d-inline-block col-md-6 p-0"> 
@@ -59,7 +59,7 @@ const Realisations = () => {
                         <div className="card1  ">
                             <p className="text-white text-center">Démonstration de la partie patient</p>
                             <ReactPlayer style={{margin:'auto', padding:5}} controls={true}
-                                        url='https://portfo-video.boudromar.com/screen-recor-seresa2-expo-go_yGHabUbh.mp4'
+                                        url='https://portfoli-omar-data.s3.eu-west-3.amazonaws.com/screen-recor-seresa2-patient.mp4'
                                         width='100%'
                                         height='300px' 
                                         fluid={true}
@@ -70,7 +70,7 @@ const Realisations = () => {
                         <div className="card1 ">
                             <p className="text-white text-center">Démonstration de la partie kiné</p>
                             <ReactPlayer style={{margin:'auto', padding:5}} controls={true}
-                                        url='https://portfo-video.boudromar.com/screen-record1-seresa1-035329-expo-go_ayIiXLfJ.mp4'
+                                        url='https://portfoli-omar-data.s3.eu-west-3.amazonaws.com/screen-record-kine.mp4'
                                         width='100%'
                                         height='300px'
                             />

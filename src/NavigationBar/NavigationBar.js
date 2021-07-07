@@ -4,7 +4,7 @@ import React, {useState} from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import {NavLink} from "react-router-dom";
 // import {Nav, Navbar, Collapse} from "react-bootstrap";
-import {Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, Button} from 'reactstrap';
+import {Collapse, Navbar, NavbarToggler, NavbarBrand, Nav} from 'reactstrap';
 import {withRouter} from "react-router-dom";
 import "./navBarStyle.css";
 

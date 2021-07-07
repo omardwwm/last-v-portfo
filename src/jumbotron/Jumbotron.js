@@ -15,7 +15,7 @@ class Jumbotron extends React.Component {
         return (
             <div className="jumbotron jumbotron-fluid">
                 <div className="container containerJumbo">
-                    <h1>En reconversion professionnelle développeur web et web mobile</h1>
+                    <h1>Développeur web et web mobile junior<br/>Futur fullstack Js (NodeJS/ReactJs)</h1>
                     <div className="row header">
                         <div className="divImg col-3">
                             <img className="myPic" src={Mypic} alt="photoDeOmar-cv"/>

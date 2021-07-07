@@ -51,7 +51,7 @@ class Competences extends React.Component{
            case "js":
                this.setState({
                    color:"#F0DB4F",
-                   pourcentage:"60%",
+                   pourcentage:"65%",
                    titre:"JAVASCRIPT",
                    colorh6:"#000000",
                    durationJs:0
@@ -68,7 +68,7 @@ class Competences extends React.Component{
            case "node":
                this.setState({
                    color:"#68A063",
-                   pourcentage:"40%",
+                   pourcentage:"60%",
                    titre:"NODE-JS",
                    durationNode:0
                });
