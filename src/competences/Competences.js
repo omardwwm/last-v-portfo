@@ -154,8 +154,7 @@ class Competences extends React.Component{
                         <div className="allProgressBar">
                             {this.progressBar()}
                         </div>
-                        <p className="pCompetences">En plus de ce que j'apprend en formation, j'essaie de faire de la veille technologique pour rester à jour et améliorer mes compétences, d'autre compétences viendront avant la fin de formation comme
-                            les farmeworks PHP, les bases de données MYSQL, des CMS  comme WORDPRESS ET PRESTASHOP et Photoshop comme outil de design  </p>
+                        <p className="pCompetences">En plus de ce que j'ai appris en formation, j'essaie de faire de la veille technologique pour rester à jour, améliorer mes compétences et apprendre d'autres technologies </p>
                         <ul className="listCopetences">
 
                         </ul>
