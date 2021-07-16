@@ -60,7 +60,7 @@ class Competences extends React.Component{
            case "react":
                this.setState({
                    color:"#61DBFB",
-                   pourcentage:"60%",
+                   pourcentage:"65%",
                    titre:"REACT.JS/REACT NATIVE",
                    durationReact:0
                });
