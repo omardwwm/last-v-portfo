@@ -1,0 +1,150 @@
+.jumbotron{
+    width: 100%;
+    /*height: 240px;*/
+    margin: auto;
+    padding: 1rem 4rem;
+    /*background-color: #b0590d;*/
+    border-radius: 3px;
+}
+.containerJumbo{
+    display: contents;
+    width: 100%;
+}
+h1{
+    display: inline;
+    font-size: 1.5rem;
+    font-weight: 450;
+    color: white;
+    vertical-align: center;
+    justify-content: center;
+    text-align: center;
+}
+.mail{
+    color: #ecba55;
+    font-weight: 350;
+}
+.mail:hover{
+    color: #b134d4;
+}
+.lienCv{
+    vertical-align: center;
+    color: #ffffff;
+    font-size: medium;
+    font-weight: bold;
+}
+.lienCv:hover{
+    color: #46e32a;
+    font-weight: bold;
+    text-decoration: none;
+}
+.iconCv{
+    font-size: 1.5rem;
+    color: #ecba55;
+}
+.myPic{
+    width: 100px;
+    height: 120px;
+    float: left;
+    margin-right: 45px;
+    border-radius: 45%;
+    margin-top: 20px;
+}
+.mesInfo .nomPrenom{
+    font-family: Cambria, sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.mesInfo p{
+    color: white;
+    line-height: 0.65rem;
+    margin-bottom: 0.9rem;
+}
+.social-icons{
+    display: inline-block;
+    float: right;
+    position: relative;
+    padding-top: 40px;
+}
+.containerJumbo .icon-git, .icon-linked{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #8d949d;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+.divImg{
+    display: inline-block;
+}
+.containerJumbo .icon-linked:hover {
+    background-color: #1d8ec6;
+    color: #fff;
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(360deg);
+}
+.containerJumbo .icon-git:hover {
+    background-color: #000000;
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(360deg);
+}
+@media (min-width: 576px) and (max-width: 768px ) {
+    h1{
+        font-size: 1rem;
+        font-weight: 350;
+        padding-left: 120px;
+    }
+    .containerJumbo .icon-git, .icon-linked{
+        /*height: 2rem;*/
+        /*width: 2rem;*/
+        font-size: 2rem;
+    }
+    .myPic{
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+    .social-icons{
+        /*display: none;*/
+        padding-top: 30px;
+    }
+    .mesInfo{
+        margin-left: 20px;
+    }
+    .mesInfo p{
+        line-height: 0.3rem;
+    }
+}
+@media  (max-width: 576px){
+    .divImg{
+        display: none;
+    }
+    .containerJumbo .icon-git, .icon-linked{
+
+    }
+    .social-icons{
+        display: contents;
+        font-size: 1rem;
+    }
+    .mesInfo p{
+        display: none;
+    }
+    h1{
+        font-size: 1rem;
+        font-weight: 350;
+    }
+    .jumbotron{
+        padding: 0.5rem;
+    }
+    .nomPrenom{
+        font-weight: 200;
+        font-size: 0.8rem;
+    }
+    .mail{
+        display: block;
+    }
+
+}

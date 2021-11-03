@@ -1,0 +1,52 @@
+.pageFormations{
+    padding: 20px;
+    /*margin-bottom: 15px;*/
+}
+.formations{
+    /*height: 150px;*/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.textFormation{
+    font-family: Cambria, sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 20px;
+    border: 1px solid #9f25e7;
+    font-size: 1rem;
+    animation: glissement infinite;
+}
+@keyframes glissement {
+    from{
+        margin-left: 100%;
+        width: 200%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+.titreFormation{
+    width: 220px;
+    background-color: #c7de70;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+    animation:  lighton infinite 2s;
+    color: #150909;
+}
+@keyframes lighton {
+    25% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
