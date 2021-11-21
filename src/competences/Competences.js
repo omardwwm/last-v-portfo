@@ -165,6 +165,7 @@ class Competences extends React.Component{
                                 <li><FaIcons.FaAndroid className="androideIcon" style={{}}/></li>
                                 <li><SiIcons.SiCsharp className="csharpIcon" style={{}}/></li>
                                 <li><DiIcons.DiDotnet className="dotnetIcon" style={{}}/></li>
+                                <li style={{color:"#d9941e", fontSize:"1.25rem", fontWeight:"bold"}}>UML : Notions</li>
                             </ul>
 
                         </div>

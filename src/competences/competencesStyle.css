@@ -23,7 +23,7 @@ svg {
 .progressDiv{
     height:30px;
     border-radius: 5px;
-    width:80%;
+    width:100%;
     background-Color: #e2d9d9;
     justify-content: center;
     align-items: center;
